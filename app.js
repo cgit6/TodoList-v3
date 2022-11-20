@@ -44,12 +44,7 @@ mongoose
     console.log(e);
   });
 
-app.get('/', function(req, res) {
-  res.send('hello world')
-})
-
-
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   // send 只能送str 不能送檔案
   res.render("Home_page.ejs");
 });
